@@ -1,0 +1,29 @@
+<div class="wrapper">
+	 							<div class="tabs clearfix">
+	 								<span class="tab">скидки учащимся</span>
+	 							    <span class="tab">
+	 							    	<span class="hidden-xs">дополнительные скидки</span>
+	 							    	<span class="hidden-sm hidden-lg hidden-md">дополнительно</span>
+	 							    </span>
+	 							</div>
+	 							<div class="tab_content">
+		 							<div class="tab_item">
+		 								<ul>
+		 									<li><i class="icon icon-Rolodex"></i>10% владельцу карты на продолжение обучения на следующем уровне;</li>
+		 									<li><i class="icon icon-List"></i>5% предъявителю карты на все программы обучения;</li>
+		 									<li><i class="icon icon-WorldWide"></i>3–5% на обучение за рубежом.</li>
+		 								</ul>
+		 							</div>
+		 							<div class="tab_item hid"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+
+		 							<div class="button_wrap">
+		 								<a href="#hidden_form" class="button btn_red popup_c">начать обучение</a>
+		 							</div>
+	 						    </div>
+	 				  </div>
+            
+            
+$(".top_phone .wrapper .tab").click(function() {
+		$(".top_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".top_phone .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");      
